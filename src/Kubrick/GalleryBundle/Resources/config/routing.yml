@@ -1,0 +1,3 @@
+kubrick_gallery_homepage:
+    path:     /
+    defaults: { _controller: KubrickGalleryBundle:Default:index }
