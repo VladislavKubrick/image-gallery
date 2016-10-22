@@ -64,3 +64,22 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Assetic Configuration
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: false
+    filters:
+        coffee:
+            bin: /usr/local/bin/coffee
+            node: /usr/local/bin/node
+            apply_to: "\.coffee$"
+        cssrewrite: ~
+        sass:
+            bin: /usr/local/bin/sass
+        compass:
+            bin: /usr/local/bin/compass
+        scss:
+            bin: /usr/local/bin/scss
+            filter: compass
+            apply_to: "\.scss$"

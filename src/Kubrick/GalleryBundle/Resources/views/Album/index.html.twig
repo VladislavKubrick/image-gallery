@@ -1,0 +1,17 @@
+<head>
+{% stylesheets debug=false
+    "@KubrickGalleryBundle/Resources/scss/main.scss"
+    "@KubrickGalleryBundle/Resources/scss/main2.scss"
+%}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+</head>
+<h1>Albums</h1>
+<a href="/album">album</a>
+<a href="/list">list</a>
+{% javascripts filter="coffee" debug=false
+    '@KubrickGalleryBundle/Resources/js/app.coffee' 
+    '@KubrickGalleryBundle/Resources/js/app_2.coffee'
+%}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}

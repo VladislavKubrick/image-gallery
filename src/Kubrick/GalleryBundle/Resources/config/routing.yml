@@ -1,3 +1,16 @@
+app:
+    path:     /app
+    defaults: { _controller: AppBundle:Default:index }
+
 kubrick_gallery_homepage:
     path:     /
-    defaults: { _controller: KubrickGalleryBundle:Default:index }
+    defaults: { _controller: KubrickGalleryBundle:Album:index }
+
+kubrick_gallery_album:
+    path:     /album
+    defaults: { _controller: KubrickGalleryBundle:Album:album }
+
+kubrick_gallery_list:
+    path:     /list
+    methods: [GET,POST]
+    defaults: { _controller: KubrickGalleryBundle:Album:list }
